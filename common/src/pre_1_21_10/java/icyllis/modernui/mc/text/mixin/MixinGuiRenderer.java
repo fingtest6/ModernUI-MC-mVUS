@@ -48,14 +48,17 @@ public class MixinGuiRenderer {
 
     /**
      * @author BloCamLimb
-     * @reason Modern Text Engine
+     * @reason Modern Text Engine - Fixed ClassCastException with non-ModernUI text objects
      */
     @Overwrite
     private void prepareText() {
         renderState.forEachText(guiTextRenderState -> {
             Matrix3x2f pose = guiTextRenderState.pose;
             ScreenRectangle scissor = guiTextRenderState.scissor;
-            ModernPreparedText preparedText = (ModernPreparedText) guiTextRenderState.ensurePrepared();
+            if (!(guiTextRenderState.ensurePrepared() instanceof ModernPreparedText preparedText)) {
+                return;
+            }
+            
             preparedText.submitRuns(renderState, pose, scissor);
         });
     }

@@ -49,14 +49,18 @@ public class MixinGuiRenderer {
      * @reason Modern Text Engine
      */
     @Overwrite
-    private void prepareText() {
-        renderState.forEachText(guiTextRenderState -> {
-            var pose = guiTextRenderState.pose;
-            ScreenRectangle scissor = guiTextRenderState.scissor;
-            ModernPreparedText preparedText = (ModernPreparedText) guiTextRenderState.ensurePrepared();
-            preparedText.submitRuns(renderState, pose, scissor);
-        });
-    }
+private void prepareText() {
+    renderState.forEachText(guiTextRenderState -> {
+        var pose = guiTextRenderState.pose;
+        ScreenRectangle scissor = guiTextRenderState.scissor;
+    
+        if (!(guiTextRenderState.ensurePrepared() instanceof ModernPreparedText preparedText)) {
+            return;
+        }
+        
+        preparedText.submitRuns(renderState, pose, scissor);
+    });
+}
 
     // Filtering is now controlled via per-draw samplers (TextureSetup/RenderSetup),
     // so we don't mutate GpuTexture filtering state here anymore.
