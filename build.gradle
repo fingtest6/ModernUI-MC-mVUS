@@ -3,6 +3,13 @@ plugins {
 }
 
 ext.modernUiMcProfiles = [
+        '1.16.5' : [
+                modVersionBase           : '3.12.0.5-build.4',
+                fabricLoader            : '0.16.10',
+                fabricApi               : '0.42.0+1.16',
+                modMenu                 : '1.16.23',
+                forgeConfigApiPortFabric: '8.0.0',
+        ],
         '1.21.9' : [
                 modVersionBase           : '3.12.0.5-build.4',
                 forge                   : '59.0.5',

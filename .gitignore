@@ -1,43 +1,51 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
-
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-.vscode
-
-# gradle
-build
-.gradle-user-home
-.gradle
-
-# other
-eclipse
-resource
-/config/
-run
-plan
-classes
-*.psd
-*.log
-logs
+```
+# Compiled and build artifacts
+*.class
+*.o
+*.obj
+*.out
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.so
+*.dll
+*.exe
+*.jar
+*.war
+*.class
+*.js.map
+*.min.js
+*.min.css
+# Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+# Build directories
+build/
+dist/
+target/
+.gradle/
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+# System files
 .DS_Store
-
-# local scratch
-.tmp/
-
-# AI tooling / agent artifacts
-.codex/
-.claude/
-AGENTS.md
-
-forge/src/main/resources/assets/modernui/emoji/a.bat
-.ace-tool/
+Thumbs.db
+# Coverage
+coverage/
+htmlcov/
+.coverage
+# Logs
+*.log
+# Minecraft specific
+.run/
+.gradle/
+local.properties
+```
