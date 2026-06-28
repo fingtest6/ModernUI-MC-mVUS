@@ -136,12 +136,19 @@ sourceSets {
         java {
             if (mcPatch < 9) {
                 setSrcDirs(['src/pre_1_21_10/java'])
+            } else if (mcPatch < 5) {
+                // 1.16.5 specific sources
+                setSrcDirs(['src/1_16_5/java'])
             } else {
                 setSrcDirs(['src/main/java', useIdentifierResourceId ? 'src/identifier/java' : 'src/pre_1_21_11/java'])
             }
         }
         resources {
-            setSrcDirs(['src/main/resources'])
+            if (mcPatch < 5) {
+                setSrcDirs(['src/1_16_5/resources'])
+            } else {
+                setSrcDirs(['src/main/resources'])
+            }
         }
     }
 }

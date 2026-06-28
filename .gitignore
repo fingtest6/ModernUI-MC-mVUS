@@ -1,43 +1,71 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
-
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-.vscode
-
-# gradle
-build
-.gradle-user-home
-.gradle
-
-# other
-eclipse
-resource
-/config/
-run
-plan
-classes
-*.psd
+```
+# Logs and temp files
 *.log
-logs
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+dist/
+build/
+target/
+.gradle/
+
+# OS generated files
 .DS_Store
+Thumbs.db
 
-# local scratch
-.tmp/
+# Compiled files
+*.pyc
+*.class
+*.o
+*.exe
+*.dll
+*.so
+*.a
+*.obj
+*.out
 
-# AI tooling / agent artifacts
-.codex/
-.claude/
-AGENTS.md
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-forge/src/main/resources/assets/modernui/emoji/a.bat
-.ace-tool/
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```

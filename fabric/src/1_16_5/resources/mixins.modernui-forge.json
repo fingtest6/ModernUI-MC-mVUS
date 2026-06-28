@@ -1,0 +1,24 @@
+{
+  "minVersion": "0.8.2",
+  "required": true,
+  "compatibilityLevel": "JAVA_11",
+  "plugin": "icyllis.modernui.forge.MixinConfigPlugin",
+  "package": "icyllis.modernui.mixin",
+  "client": [
+    "AccessGameRenderer",
+    "AccessOption",
+    "AccessPostChain",
+    "AccessVideoSettings",
+    "MixinBidiReorder",
+    "MixinClientLanguage",
+    "MixinFontRenderer",
+    "MixinIngameGui",
+    "MixinLanguage",
+    "MixinMouseHandler",
+    "MixinScreen",
+    "MixinScrollPanel",
+    "MixinSelectionList",
+    "MixinStringSplitter",
+    "MixinWindow"
+  ]
+}
