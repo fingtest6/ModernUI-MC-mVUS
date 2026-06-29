@@ -1,0 +1,29 @@
+{
+  "minVersion": "0.8.2",
+  "required": true,
+  "mixinPriority": 1,
+  "compatibilityLevel": "JAVA_11",
+  "plugin": "icyllis.modernui.mc.fabric.MixinConfigPlugin",
+  "package": "icyllis.modernui.mc.mixin",
+  "client": [
+    "AccessFontRenderer",
+    "AccessFoodData",
+    "AccessGameRenderer",
+    "AccessOption",
+    "AccessPostChain",
+    "AccessVideoSettings",
+    "MixinBidiReorder",
+    "MixinClientLanguage",
+    "MixinFontRenderer",
+    "MixinFoodData",
+    "MixinIngameGui",
+    "MixinLanguage",
+    "MixinLevelLoadingScreen",
+    "MixinMouseHandler",
+    "MixinScreen",
+    "MixinScrollPanel",
+    "MixinSelectionList",
+    "MixinStringSplitter",
+    "MixinWindow"
+  ]
+}
