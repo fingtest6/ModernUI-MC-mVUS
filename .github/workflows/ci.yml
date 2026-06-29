@@ -26,7 +26,7 @@ jobs:
             minecraft_version: "1.21.11"
             gradle_tasks: "build"
           - name: "Java 11 • 1.16.5 • Fabric"
-            java: "11"
+            java: "17"
             minecraft_version: "1.16.5"
             gradle_tasks: ":ModernUI-Fabric:build -x test"
 
