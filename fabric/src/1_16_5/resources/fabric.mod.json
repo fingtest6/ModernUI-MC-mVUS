@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "modernui",
+  "version": "${version}",
+  "name": "Modern UI",
+  "description": "Modern desktop framework from low-level 3D graphics API to high-level view model, for development of 2D/3D rendering software or game engine, with internationalization support and many new technologies.",
+  "authors": [
+    "BloCamLimb"
+  ],
+  "contact": {
+    "homepage": "https://curseforge.com/minecraft/mc-mods/modern-ui",
+    "issues": "https://github.com/Tealeste/ModernUI-MC-mVUS/issues",
+    "sources": "https://github.com/Tealeste/ModernUI-MC-mVUS"
+  },
+  "license": "LGPL-3.0-or-later",
+  "icon": "modernui_logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "icyllis.modernui.mc.fabric.ModernUIFabric"
+    ],
+    "client": [
+      "icyllis.modernui.mc.fabric.ModernUIFabricClient"
+    ],
+    "modmenu": [
+      "icyllis.modernui.mc.fabric.MuiModMenuApi"
+    ]
+  },
+  "mixins": [
+    "mixins.modernui-fabric-1.16.5.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": ">=1.16.5 <1.17",
+    "java": ">=8",
+    "fabric-api": ">=0.42.0+1.16",
+    "forgeconfigapiport": ">=8.0.0"
+  },
+  "conflicts": {
+    "blur": "*",
+    "tipthescales": "*"
+  }
+}
